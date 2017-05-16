@@ -4,14 +4,25 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isola - produktside - disposisjon</title>
+    <title>Isola powertekk</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
     <div class="header">
       <div class="row">
         <div class="small-12 columns">
-          <h1>Isola - produktside - disposisjon</h1>
+          <h1><div class="show-for-sr">Isola</div> Powertekk Exclusive</h1>
+            <nav aria-label="You are here:" role="navigation">
+              <ul class="breadcrumbs">
+                <li><a href="#">Forsiden</a></li>
+                <li><a href="#">Produkter</a></li>
+                <li><a href="#">Skråtak</a></li>
+                <li><a href="#">Isola Powertekk</a></li>
+                <li>
+                  <span class="show-for-sr">Current: </span> Isola Powertekk Exclusive
+                </li>
+              </ul>
+            </nav>        
         </div>
       </div>
     </div>
@@ -23,8 +34,7 @@
         <div class="small-12">
           <h2>Hva er dette produktet</h2>
           <ul>
-            <li>Navn/tittel</li>
-            <li>NOBB NR</li>
+            <li>NOBB NR: 45120074 (plassere et annet sted?)</li>
             <li>Funksjon <br> <small>(Kort beskrivelse, 1 setning (h2 desc). Oppramsing/punktliste</small> </li>
             <li>Bilde</li>
             <li>Godkjenninger og utmerkelser (SINTEF, CE, Breeam etc.) (Visuelt og lite, kun en bekreftelse. Manuelt, kunne huke av for alternativer))</li>
@@ -34,16 +44,33 @@
     </div>
     
     <div class="row">
-      <div class="wf-box">
+      <div class="wf-box accordion" data-accordion data-allow-all-closed="true">
         <div class="small-12">
           <h2>Produktvalg</h2>
           <ul>
             <li>Mønster (single produkt)</li>
             <li>Farge (type/variabel). (Forslag: Eye-candy/pop-in?)</li>
           </ul>
+
+          </ul> 
+          
         </div>
       </div>
     </div>
+    
+    <!--accordion component
+    <div class="row">
+      <div class="accordion" data-accordion data-allow-all-closed="true">      
+        <div class="accordion-item is-active"  data-accordion-item>
+          <a href="#" class="accordion-title">Accordion 1</a>      
+          <div class="accordion-content" data-tab-content>
+            <p>Panel 1. Lorem ipsum dolor</p>
+            <a href="#">Nowhere to Go</a>
+          </div>
+        </div>                
+      </div>
+    </div>
+    -->
 
     <div class="row">
       <div class="wf-box">
@@ -77,8 +104,8 @@
         <div class="small-12">
           <h2>Mengdetekst</h2>
           <ul>
-            <li>Produktbeskrivelse</li>            
-            <li>Visuelt, 3D/scroll to</li>
+            <li>Produktbeskrivelse</li>
+            <li>NOBB nummer-tabell fra prisliste</li>                        
             <li>«Fant du det du lette etter?»</li>
           </ul>
         </div>
@@ -90,7 +117,6 @@
         <div class="small-12">
           <h2>Aside</h2>
           <ul>
-            <li>NOBBnummer-tabell fra prisliste</li>
             <li>Tilbehør (Enklere produkter, hentes fra PIM) Egen mal</li>
             <li>Relevante produkter (se også)</li>
             <li>Relevante artikler på Blogg</li>
